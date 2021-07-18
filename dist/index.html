@@ -1,13 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tailwind css 2</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Art By Code</title>
 </head>
+
 <body>
-    <h1 class="text-blue-500">Hello</h1>
+    <!-- Start Of Navbar -->
+    <div class="container mx-auto">
+        <div class="container mx-auto px-8 overflow-hidden">
+            <div class="py-4 grid grid-cols-12 items-center">
+                <div class="col-span-6 px-0 md:px-14">
+                    <a href="/" class="inline-block">
+                        <img src="assets/logo.svg" class="h-12 md:h-16" alt="Art By Code Logo" />
+                    </a>
+                </div>
+                <button class="px-4 py-2 shadow rounded ml-auto md:hidden col-span-6">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul
+                    class="col-span-12 mt-6 justify-end items-center md:mt-0 md:col-span-6 md:flex font-poppins font-semibold gap-8 px-0 md:px-32">
+                    <li><a href="#" class="text-green-light">Home</a></li>
+                    <li><a href="#" class="text-blue-dark">Pelayanan</a></li>
+                    <li><a href="#" class="text-blue-dark">Karya Kami</a></li>
+                    <li><a href="#" class="text-blue-dark">Harga</a></li>
+                    <li><a href="#" class="text-blue-dark">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Of Navbar -->
+
+        <!-- Start Of Hero -->
+        <div class="px-10 md:px-20 -mt4 md:mt-0">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12 md:col-span-6 py-10 md:py-20 -pl-10 md:pl-4 -mt-4 md:mt-0">
+                    <h1 class="text-blue-dark font-open-sans text-3xl md:text-6xl font-semibold py-2 md:py-6">Hai, Kami
+                        adalah</h1>
+                    <h1 class="font-montserrat text-green-dark text-3xl md:text-6xl font-bold pb-4 md:pb-10">Art By
+                        Code | ABC</h1>
+                    <span class="text-blue-dark opacity-70 font-open-sans text-xs md:text-lg">Kita bisa menciptakan
+                        sesuatu yang indah dari kode</span><br>
+                    <div class="mt-6">
+                        <button
+                            class="bg-green-dark hover:bg-green-light text-white py-2 md:py-3 px-4 md:px-8 rounded-full font-open-sans text-sm md:text-md">
+                            Kontak Kami
+                        </button>
+                        <button
+                            class="bg-white hover:bg-green-dark text-green-dark hover:text-white font-open-sans py-2 md:py-3 px-4 md:px-8 rounded-full shadow-lg ml-4 md:ml-10 text-sm md:text-md">
+                            Lihat Produk
+                        </button>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-6 order-first md:order-none">
+                    <img src="assets/hero.svg" alt="Hero Image" class="pt-4 md:pt-10 w-max md:w-9/12 pl-0 md:ml-40">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Hero -->
+
+    <!-- Start of Kenalan Yuk! -->
+    <div class="container mx-auto px-8 overflow-hidden">
+        <div class="grid grid-cols-12 my-16 md:my-24 text-blue-dark overflow-hidden">
+            <div
+                class="grid items-center justify-items-center col-span-12 bg-contain bg-no-repeat bg-center h-hero-mobile md:h-hero bg-map">
+                <div class="flex flex-col justify-center items-center md:w-1/2 text-center -mt-10 font-open-sans">
+                    <h1 class="text-2xl md:text-4xl font-medium font-open-sans" data-aos="fade-up"
+                        data-aos-duration="1200">
+                        Kenalan Yuk
+                    </h1>
+                    <p class="my-6 text-sm md:text-lg" data-aos="fade-left" data-aos-duration="1200">
+                        Kami adalah <span class="font-montserrat font-semibold">Art By Code</span>, sebuah Tim yang bisa
+                        melayani kebutuhanmu dalam dunia digital saat ini.
+                        Di saat kemajuan teknologi semakin pesat, pastikan kebutuhanmu terpenuhi dengan tepat.
+                    </p>
+                    <p class="text-sm md:text-lg" data-aos="fade-right" data-aos-duration="1200">
+                        Intinya, kami adalah Tim yang akan membantumu bekerja dan menciptakan karya dengan membuat
+                        website keren, disertai tampilan desain yang modern
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Kenalan Yuk! -->
+
+    <!-- Start Of Service -->
+    <div class="container mx-auto px-8 overflow-hidden">
+        <h1 class="text-center font-medium text-2xl md:text-4xl my-12 py-6 sub font-open-sans">
+            Semua Layanan Yang Kami Berikan Untukmu
+        </h1>
+
+        <div class="grid grid-cols-12">
+            <div class="col-span-12">
+                <div
+                    class="grid grid-cols-2 gap-4 md:gap-0 md:grid-cols-3 relative justify-items-center justify-around ">
+                    <img src="assets/service/circle.svg" class="invisible md:visible absolute -top-6 right-8 z-0 "
+                        alt="circle" />
+
+                    <img src="assets/service/circle.svg" class="invisible md:visible absolute -bottom-1 left-5 z-0 "
+                        alt="circle" />
+
+                    <div class="border px-6 py-12 mb-8 md:w-2/3 web shadow-xl" data-aos="zoom-in" data-aos-delay="150"
+                        data-aos-duration="1000">
+                        <img src="assets/service/web.svg" alt="web development" />
+                        <h3 class="font-medium text-sm py-2">Web Development</h3>
+                        <p class="info text-xs">
+                            Situs Web Yang Dibuat Khusus Dan Responsif. Kelola Konten Seperti Yang Anda Inginkan.
+                        </p>
+                    </div>
+
+                    <div class="border px-6 py-12 mb-8 md:w-2/3 mobile shadow-xl" data-aos="zoom-in"
+                        data-aos-delay="250" data-aos-duration="1000">
+                        <img src="assets/service/mobile.svg" alt="mobile development" />
+                        <h3 class="font-medium text-sm py-2">Mobile Development</h3>
+                        <p class="info text-xs">
+                            Pembuatan Aplikasi Cross Platform Dengan Teknologi Masa Kini.
+                        </p>
+                    </div>
+
+                    <div class="border px-6 py-12 mb-8 md:w-2/3 ui z-10 shadow-xl" data-aos="zoom-in"
+                        data-aos-delay="350" data-aos-duration="1000">
+                        <img src="assets/service/ui-ux.svg" alt="ui ux design" />
+                        <h3 class="font-medium text-sm py-2">UI/UX Design</h3>
+                        <p class="info text-xs">
+                            Punya Ide Bagus ? Biarkan Kami Membuat Dan Mengembangkan Design Yang Kamu Inginkan.
+                        </p>
+                    </div>
+
+                    <div class="border px-6 py-12 md:w-2/3 z-10 mb-8 machine shadow-xl" data-aos="zoom-in"
+                        data-aos-delay="650" data-aos-duration="1000">
+                        <img src="assets/service/machine.svg" alt="machine learning" />
+                        <h3 class="font-medium text-sm py-2">Machine Learning</h3>
+                        <p class="info text-xs">
+                            Lorem Ipsum Dolor Sit Amet, Constectur This Is Lorem Ipsum Text, We Dont Have Copy Writer
+                            LOL.
+                        </p>
+                    </div>
+
+                    <div class="border px-6 py-12 md:w-2/3 mb-8 automation shadow-xl" data-aos="zoom-in"
+                        data-aos-delay="550" data-aos-duration="1000">
+                        <img src="assets/service/automation.svg" alt="automation system" />
+                        <h3 class="font-medium text-sm py-2">Automation System</h3>
+                        <p class="info text-xs">
+                            Lorem Ipsum Dolor Sit Amet, Constectur Adipsiewfjkbqy Aqwidh.
+                        </p>
+                    </div>
+
+                    <div class="border px-6 py-12 md:w-2/3 mb-8 branding shadow-xl" data-aos="zoom-in"
+                        data-aos-delay="450" data-aos-duration="1000">
+                        <img src="assets/service/ads.svg" alt="web development" />
+                        <h3 class="font-medium text-sm py-2">Branding & Digital Ads</h3>
+                        <p class="info text-xs">
+                            Capai Tujuan Anda Melalui Otomatisasi Pemasaran, SEO, Komunitas, Dll.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Service -->
+
+    <!-- Start Of Testimoni -->
+    <div class="container mx-auto pt-20">
+        <h3 class="text-blue-dark opacity-50 text-center font-open-sans font-semibold text-sm md:text-xl">Pelanggan Kami</h3>
+        <h1 class="container text-blue-dark text-center font-open-sans font-semibold text-lg md:text-4xl">Ulasan pelanggan kami memilih Art By Code </h1>
+        
+        <div class="grid grid-cols-12 mt-10 md:mt-20">
+            <div class="col-span-6 text-center">
+                <div class="flex w-full justify-end items-center ml-10 md:ml-36">
+                    <div class="w-full max-w-lg">
+                        <div class="bg-white pt-2 pb-4 rounded-2xl shadow-lg w-8/12">
+                            <img src="assets/testimoni/megumi.jpg" alt="testimoni" class="rounded-full w-6/12 md:w-3/12 mx-auto mt-6">
+                            <div class="py-6 mx-4">
+                                <span class=" mt-4 text-sm md:text-md font-open-sans opacity-50 mb-6">With the help of the good team of the right direction our company was abble to..</span>
+                                <div class="mt-2">
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-lg md:text-2xl font-open-sans font-semibold">Megumi Kato</h1>
+                                    <h1 class="text-sm md:text-md font-open-sans opacity-50 pt-2">Game Developer</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-span-6 text-center">
+                <div class="flex w-full justify-end items-center ml-6 md:-ml-56">
+                    <div class="w-full max-w-lg">
+                        <div class="bg-white pt-2 pb-4 rounded-2xl shadow-lg w-8/12">
+                            <img src="assets/testimoni/siesta.jpg" alt="testimoni" class="rounded-full w-6/12 md:w-3/12 mx-auto mt-6">
+                            <div class="py-6 mx-4">
+                                <span class=" mt-4 text-sm md:text-md font-open-sans opacity-50 mb-6">With the help of the good team of the right direction our company was abble to..</span>
+                                <div class="mt-2">
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                    <i class="fas fa-star fa-xs text-green-dark"></i>
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-lg md:text-2xl font-open-sans font-semibold">Siesta</h1>
+                                    <h1 class="text-sm md:text-md font-open-sans opacity-50 pt-2">Analytics ads</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto col-span-12 mt-10 md:mt-20">
+                <i class="fas fa-angle-left fa-2x bg-green-dark text-white px-5 py-3 rounded-full shadow-lg mr-10"></i>
+                <i class="fas fa-angle-right fa-2x bg-white text-green-dark px-5 py-3 rounded-full shadow-lg"></i>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Testimoni -->
+    
+    <!-- Start Of Our Team -->
+        <div class="grid grid-cols-1 md:grid-cols-12 mt-16 md:mt-44">
+            <div class="flex col-span-6 justify-center items-center">
+                <img src="assets/team.svg" alt="our team" class="w-8/12">
+            </div>
+            <div class="col-span-6 px-16 md:px-10 py-10">
+                <h1 class="text-blue-dark opacity-50 font-open-sans font-semibold text-lg md:text-2xl">Tim Kami</h1>
+                <h1 class="text-blue-dark font-open-sans font-semibold text-2xl md:text-4xl w-12/12 md:w-10/12 mt-2 md:mt-6">Lorem ipsum dolor sit amet adipiscing elit.</h1>
+                <p class="font-open-sans text-black w-12/12 md:w-8/12 mt-2 md:mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo error eveniet quod aut quis deleniti rem voluptates at dicta? Nobis, autem? Nemo aliquid hic expedita? Saepe alias laborum incidunt quasi.</p>
+                <button
+                    class="bg-green-dark hover:bg-green-light text-white py-2 md:py-3 px-4 md:px-10 rounded-full font-open-sans text-sm md:text-md mt-6">
+                    Anggota Lainnya
+                </button>
+            </div>
+        </div>
+    <!-- End Of Our Team -->
+
+    <!-- Start Of Contact Us -->
+        <div class="grid grid-cols-12 justify-center items-center mt-10 md:mt-40">
+            <div class="col-span-12 text-center flex flex-col justify-center items-center">
+                <h1 class="text-blue-dark text-2xl md:text-4xl font-open-sans font-semibold">Segera Gabung, Yuk!</h1>
+                <p class="text-sm md:text-lg text-blue-dark font-open mt-8">Mari Bekarja sama dengan kami</p>
+                <p class="text-sm md:text-lg text-blue-dark font-open">dan dapatkan pelayanan terbaik dari Art By Code😊</p>
+                <button
+                    class="bg-green-dark hover:bg-green-light text-white py-2 md:py-3 px-4 md:px-10 rounded-full font-open-sans text-sm md:text-md mt-6">
+                    Kontak Kami
+                </button>
+            </div>
+        </div>
+    <!-- End Of Contact Us -->
 </body>
+
 </html>
