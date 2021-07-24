@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         // map: 'url("/dist/assets/map.svg")',
         'map': "url('assets/map.svg')",
+        'cardflow' : "url('assets/cardflow.svg')"
       }),
       colors: (theme) => ({
         'blue-dark': '#115B76',

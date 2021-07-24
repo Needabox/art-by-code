@@ -17950,6 +17950,10 @@ video {
   background-image: url('assets/map.svg');
 }
 
+.bg-cardflow {
+  background-image: url('assets/cardflow.svg');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -50097,6 +50101,10 @@ video {
     background-image: url('assets/map.svg');
   }
 
+  .sm\:bg-cardflow {
+    background-image: url('assets/cardflow.svg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -81818,6 +81826,10 @@ video {
 
   .md\:bg-map {
     background-image: url('assets/map.svg');
+  }
+
+  .md\:bg-cardflow {
+    background-image: url('assets/cardflow.svg');
   }
 
   .md\:from-transparent {
@@ -113543,6 +113555,10 @@ video {
     background-image: url('assets/map.svg');
   }
 
+  .lg\:bg-cardflow {
+    background-image: url('assets/cardflow.svg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -145266,6 +145282,10 @@ video {
     background-image: url('assets/map.svg');
   }
 
+  .xl\:bg-cardflow {
+    background-image: url('assets/cardflow.svg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -176987,6 +177007,10 @@ video {
 
   .\32xl\:bg-map {
     background-image: url('assets/map.svg');
+  }
+
+  .\32xl\:bg-cardflow {
+    background-image: url('assets/cardflow.svg');
   }
 
   .\32xl\:from-transparent {
