@@ -23,6 +23,9 @@ module.exports = {
         montserrat: '"Montserrat Alternates", sans-serif',
         'open-sans': '"Open Sans", sans-serif',
       },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+      },
     },
   },
   variants: {
