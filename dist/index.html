@@ -16,6 +16,32 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Poppins:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .horizontal_slider {
+            display: block;
+            width: 100%;
+            overflow-x: scroll;
+            padding-left: 40px;
+            padding-right: 40px;
+            box-sizing: border-box;
+        }
+        .horizontal_slider::-webkit-scrollbar {
+            display: none;
+        }
+        .slider_container {
+                display: block;
+                white-space: nowrap;
+            }
+
+        .item {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
     <title>Art By Code</title>
 </head>
 
@@ -74,31 +100,45 @@
     <!-- End Of Hero -->
 
     <!-- Start Of Partner -->
-    <div class="mt-24">
-        <div class="grid grid-cols-12 justify-items-center px-0 md:px-72">
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/bwa2.svg" alt="bwa">
-            </div>
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/trans.svg" alt="bwa">
-            </div>
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/ctcorp.svg" alt="bwa">
-            </div>
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/alfajar.svg" alt="bwa">
-            </div>
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/docotel.svg" alt="bwa">
-            </div>
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/bankdki.svg" alt="bwa">
-            </div>
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/mufit.svg" alt="bwa">
-            </div>
-            <div class="col-span-6 md:col-span-3 mb-12">
-                <img src="assets/partner/menbiska.svg" alt="bwa">
+    <div class="mt-20">
+        <div class="horizontal_slider">
+            <div class="slider_container px-0 md:px-10">
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/bwa2.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/bankdki.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/ctcorp.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/docotel.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/menbiska.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/mufit.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/peradi.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/cvbarokah.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/medcoenergi.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/schoolmedia.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/trans.svg">
+                </div>
+                <div class="item w-24 md:w-36">
+                    <img src="assets/partner/kyoob.svg">
+                </div>
             </div>
         </div>
     </div>
