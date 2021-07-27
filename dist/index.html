@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,7 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Poppins:wght@300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <style>
         * {
             margin: 0;
@@ -63,7 +63,7 @@
                     <li><a href="#" class="text-green-light">Home</a></li>
                     <li><a href="#" class="text-blue-dark">Pelayanan</a></li>
                     <li><a href="#" class="text-blue-dark">Karya Kami</a></li>
-                    <li><a href="#" class="text-blue-dark">Harga</a></li>
+                    <li><a href="harga.html" class="text-blue-dark">Harga</a></li>
                     <li><a href="#" class="text-blue-dark">Kontak</a></li>
                 </ul>
             </div>
@@ -482,16 +482,6 @@
             document.getElementById(modalID).classList.toggle("flex");
             document.getElementById(modalID + "-backdrop").classList.toggle("flex");
         }
-    </script>
-    <!-- JS Plugins Init. -->
-    <script>
-        $(document).on('ready', function () {
-            // INITIALIZATION OF SLICK CAROUSEL
-            // =======================================================
-            $('.js-slick-carousel').each(function () {
-                var slickCarousel = $.HSCore.components.HSSlickCarousel.init($(this));
-            });
-        });
     </script>
 </body>
 
