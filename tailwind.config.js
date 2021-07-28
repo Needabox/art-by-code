@@ -12,6 +12,10 @@ module.exports = {
         'blue-dark': '#115B76',
         'green-dark': '#1DC0AD',
         'green-light': '#28dac5',
+        'green-old': '#22C58B',
+        'green-young':  '#DEF6EE',
+        'red-dark': '#D92929',
+        'red-light': '#F6DEDE'
       }),
       height: (theme) => ({
         'footer-bg': '440px',
